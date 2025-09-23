@@ -1,0 +1,246 @@
+@use "global" as *;
+
+.gallery {
+  position: relative;
+  display: grid;
+  gap: rem(24);
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: dense;
+
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: rem(9);
+  }
+}
+
+.gallery::before {
+  position: absolute;
+  background-image: url(../images/icon-image02.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  max-width: rem(127);
+  height: auto;
+  aspect-ratio: 127 / 99;
+  top: rem(50);
+  right: rem(20);
+  z-index: 1;
+
+  @include mq(md) {
+    max-width: rem(88);
+    top: rem(-84);
+    right: auto;
+    left: rem(12);
+  }
+}
+
+.gallery::after {
+  @include mq(md) {
+    position: absolute;
+    background-image: url(../images/icon-image01.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    max-width: rem(84);
+    height: auto;
+    aspect-ratio: 84 / 60;
+    top: rem(-52);
+    right: rem(-15);
+    z-index: 1;
+  }
+}
+
+.gallery__item1 {
+  position: relative;
+  grid-column: span 6;
+  grid-row: span 2;
+
+  @include mq(md) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.gallery__item2 {
+  position: relative;
+  grid-column: span 3;
+  grid-row: span 1;
+
+  @include mq(md) {
+    max-width: 66%;
+    justify-self: end;
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.gallery__item3 {
+  grid-column: span 6;
+  grid-row: span 3;
+
+  @include mq(md) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.gallery__item4 {
+  position: relative;
+  grid-column: span 5;
+  grid-row: span 4;
+
+  @include mq(md) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.gallery__item5 {
+  position: relative;
+  grid-column: span 6;
+  grid-row: span 2;
+
+  @include mq(md) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.gallery__item1::before {
+  position: absolute;
+  background-image: url(../images/icon-image03.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  max-width: rem(83);
+  height: auto;
+  aspect-ratio: 83 / 89;
+  bottom: rem(-32);
+  left: rem(-38);
+  z-index: 1;
+
+  @include mq(md) {
+    background-image: none;
+    max-width: rem(58);
+    bottom: rem(-10);
+    left: rem(2);
+  }
+}
+
+.gallery__item2::before {
+  position: absolute;
+  background-image: url(../images/icon-image01.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  max-width: rem(84);
+  height: auto;
+  aspect-ratio: 84 / 60;
+  top: rem(-29);
+  right: rem(-45);
+  z-index: 1;
+
+  @include mq(md) {
+    background-image: url(../images/icon-image07.webp);
+    max-width: rem(119);
+    aspect-ratio: 119 / 138;
+    right: auto;
+    left: rem(-125);
+    top: rem(-44);
+  }
+}
+
+
+.gallery__item4::before {
+  position: absolute;
+  background-image: url(../images/icon-image04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  max-width: rem(137);
+  height: auto;
+  aspect-ratio: 137 / 96;
+  top: rem(25);
+  right: rem(-120);
+  z-index: 1;
+
+  @include mq(md) {
+    background-image: none;
+    max-width: rem(96);
+    top: rem(10);
+    right: rem(-20);
+  }
+}
+
+.gallery__item5::before {
+  position: absolute;
+  background-image: url(../images/icon-image05.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  width: 100%;
+  max-width: rem(181);
+  height: auto;
+  aspect-ratio: 181 / 163;
+  bottom: rem(-20);
+  right: rem(-146);
+  z-index: 1;
+
+  @include mq(md) {
+    max-width: rem(126);
+    bottom: rem(-63);
+    right: rem(-6);
+  }
+}
+
+.gallery__item1 img {
+  width: 100%;
+  aspect-ratio: 465 / 375;
+  height: auto;
+  object-fit: cover;
+  border-radius: rem(22.5);
+}
+
+.gallery__item2 img {
+  width: 100%;
+  aspect-ratio: 236 / 190;
+  height: auto;
+  object-fit: cover;
+  border-radius: rem(22.5);
+}
+
+.gallery__item3 img {
+  width: 100%;
+  aspect-ratio: 483 / 264;
+  height: auto;
+  object-fit: cover;
+  border-radius: rem(22.5);
+}
+
+.gallery__item4 img {
+  width: 100%;
+  aspect-ratio: 394 / 318;
+  height: auto;
+  object-fit: cover;
+  border-radius: rem(22.5);
+}
+
+.gallery__item5 img {
+  width: 100%;
+  aspect-ratio: 440 / 227;
+  height: auto;
+  object-fit: cover;
+  border-radius: rem(22.5);
+}
