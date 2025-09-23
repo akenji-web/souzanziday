@@ -4,13 +4,6 @@
   position: relative;
   height: 300vh;
   background-color: $beige;
-  // padding-top: rem(54);
-  // padding-bottom: rem(40);
-
-  @include mq(md) {
-    // padding-top: rem(45);
-    // padding-bottom: rem(64);
-  }
 }
 
 .mv__inner {
