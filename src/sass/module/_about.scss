@@ -66,7 +66,8 @@
 
   @include mq(md) {
     max-width: rem(86);
-    bottom: rem(708);
+    top: rem(576);
+    bottom: auto;
     left: calc(50% - min(rem(288), 45vw));
   }
 }
