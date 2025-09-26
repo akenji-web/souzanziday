@@ -95,6 +95,10 @@
   aspect-ratio: 1;
   top: rem(4);
   left: rem(-17);
+
+  @include mq(md) {
+    max-width: rem(7);
+  }
 }
 
 
