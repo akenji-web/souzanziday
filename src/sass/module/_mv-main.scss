@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.mv-main {
+#souzanjiday .mv-main {
   margin-left: rem(121);
   display: grid;
   grid-template-columns: auto auto auto;
@@ -15,7 +15,7 @@
   }
 }
 
-.mv-main__image {
+#souzanjiday .mv-main__image {
   align-self: end;
   width: 100%;
   max-width: rem(415);
@@ -33,7 +33,7 @@
   }
 }
 
-.mv-main__description {
+#souzanjiday .mv-main__description {
   margin-top: rem(58);
   margin-left: rem(114);
   width: 100%;
@@ -51,7 +51,7 @@
   }
 }
 
-.mv-main__title {
+#souzanjiday .mv-main__title {
   margin-left: rem(38);
   width: 100%;
   max-width: rem(111);

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.button {
+#souzanjiday .button {
   display: block;
   width: 100%;
   max-width: rem(480);
@@ -28,9 +28,25 @@
 }
 
 @media (any-hover: hover) {
-  .button:hover {
+  #souzanjiday .button:hover {
     color: $purple;
     background-color: #fff;
     border: 1px solid $purple;
+  }
+}
+
+#souzanjiday .button.button--small {
+  max-width: rem(293);
+  padding: rem(16) 0 rem(19);
+  font-size: rem(13.4);
+  line-height: calc(16.08 / 13.4);
+  letter-spacing: 0.35em;
+
+  @include mq(md) {
+    max-width: rem(261);
+    padding: rem(13) 0 rem(16);
+    font-size: rem(14);
+    line-height: calc(16 / 14);
+    letter-spacing: 0.35em;
   }
 }

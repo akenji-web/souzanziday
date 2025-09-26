@@ -1,26 +1,26 @@
 @use "global" as *;
 
-.information {
+#souzanjiday .information {
   background-color: $beige;
   padding-top: rem(148);
 
   @include mq(md) {
-    padding-top: rem(69);
+    padding-top: rem(88);
   }
 }
 
-.information__inner {
+#souzanjiday .information__inner {
   @include mq(md) {
     max-width: rem(600);
   }
 }
 
-.information__title {
+#souzanjiday .information__title {
   width: fit-content;
   margin-inline: auto;
 }
 
-.information__title-image {
+#souzanjiday .information__title-image {
   width: 100%;
   max-width: rem(1000);
   aspect-ratio: 1000 / 80;
@@ -34,7 +34,7 @@
   }
 }
 
-.information__date {
+#souzanjiday .information__date {
   margin-top: rem(41);
   margin-inline: auto;
   width: fit-content;
@@ -44,10 +44,10 @@
   }
 }
 
-.information__date-image {
+#souzanjiday .information__date-image {
   width: 100%;
-  max-width: rem(329);
-  aspect-ratio: 329 / 98;
+  max-width: rem(333);
+  aspect-ratio: 333 / 100;
   height: auto;
   object-fit: contain;
   object-position: center;
@@ -59,7 +59,7 @@
   }
 }
 
-.information__container {
+#souzanjiday .information__container {
   margin-top: rem(51);
 
   @include mq(md) {
@@ -67,7 +67,7 @@
   }
 }
 
-.information__image {
+#souzanjiday .information__image {
   margin-top: rem(110);
   width: 100%;
   max-width: rem(429);
@@ -79,7 +79,7 @@
   }
 }
 
-.information__image img {
+#souzanjiday .information__image img {
   aspect-ratio: 429 / 417;
   height: auto;
   object-fit: contain;

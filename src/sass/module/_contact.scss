@@ -1,0 +1,25 @@
+@use "global" as *;
+
+#souzanjiday .contact {
+  background-color: $beige;
+  padding-top: rem(91);
+
+  @include mq(md) {
+    padding-top: rem(53);
+  }
+}
+
+#souzanjiday .contact__text {
+  color: $black;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  line-height: calc(27.2 / 16);
+  letter-spacing: 0.16em;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: calc(27 / 14);
+  }
+}

@@ -1,0 +1,14 @@
+@use "global" as *;
+
+#souzanjiday .attention {
+  width: fit-content;
+  padding: rem(8) rem(24) rem(9) rem(26);
+  border-radius: 20vw;
+  background-color: $purple3;
+  color: $white;
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: calc(16.8 / 14);
+  letter-spacing: 0.20em;
+}

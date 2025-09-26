@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.mv-detail {
+#souzanjiday .mv-detail {
   display: flex;
   flex-direction: column;
 
@@ -15,13 +15,13 @@
   }
 }
 
-.mv-detail__top {
+#souzanjiday .mv-detail__top {
 }
 
-.mv-detail__bottom {
+#souzanjiday .mv-detail__bottom {
 }
 
-.mv-detail__image01 {
+#souzanjiday .mv-detail__image01 {
   width: 100%;
   max-width: rem(221);
   aspect-ratio: 221 / 89;
@@ -33,7 +33,7 @@
   }
 }
 
-.mv-detail__image02 {
+#souzanjiday .mv-detail__image02 {
   margin-top: rem(30);
   width: 100%;
   max-width: rem(221);
@@ -47,7 +47,7 @@
   }
 }
 
-.mv-detail__image03 {
+#souzanjiday .mv-detail__image03 {
   margin-top: rem(30);
   width: 100%;
   max-width: rem(219);
@@ -61,7 +61,7 @@
   }
 }
 
-.mv-detail__image04 {
+#souzanjiday .mv-detail__image04 {
   margin-top: rem(38);
   width: 100%;
   max-width: rem(224);

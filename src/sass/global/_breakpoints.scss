@@ -53,7 +53,7 @@ $mediaquerys: (
 
 @if $startFrom == sp {
   //pcで表示
-  .u-desktop {
+  #souzanjiday .u-desktop {
     display: none;
     @include mq("md") {
       display: block;
@@ -61,14 +61,14 @@ $mediaquerys: (
   }
 
   //モバイルのみ表示
-  .u-mobile {
+  #souzanjiday .u-mobile {
     @include mq("md") {
       display: none;
     }
   }
 } @else {
   //pcで表示
-  .u-desktop {
+  #souzanjiday .u-desktop {
     display: block;
     @include mq("md") {
       display: none;
@@ -76,7 +76,7 @@ $mediaquerys: (
   }
 
   //モバイルのみ表示
-  .u-mobile {
+  #souzanjiday .u-mobile {
     display: none;
     @include mq("md") {
       display: block;

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.gallery {
+#souzanjiday .gallery {
   position: relative;
   display: grid;
   gap: rem(24);
@@ -14,7 +14,7 @@
   }
 }
 
-.gallery::before {
+#souzanjiday .gallery::before {
   position: absolute;
   background-image: url(../images/icon-image02.webp);
   background-size: cover;
@@ -37,7 +37,7 @@
   }
 }
 
-.gallery::after {
+#souzanjiday .gallery::after {
   @include mq(md) {
     position: absolute;
     background-image: url(../images/icon-image01.webp);
@@ -55,7 +55,7 @@
   }
 }
 
-.gallery__item1 {
+#souzanjiday .gallery__item1 {
   position: relative;
   grid-column: span 6;
   grid-row: span 2;
@@ -66,7 +66,7 @@
   }
 }
 
-.gallery__item2 {
+#souzanjiday .gallery__item2 {
   position: relative;
   grid-column: span 3;
   grid-row: span 1;
@@ -79,7 +79,7 @@
   }
 }
 
-.gallery__item3 {
+#souzanjiday .gallery__item3 {
   grid-column: span 6;
   grid-row: span 3;
 
@@ -89,7 +89,7 @@
   }
 }
 
-.gallery__item4 {
+#souzanjiday .gallery__item4 {
   position: relative;
   grid-column: span 5;
   grid-row: span 4;
@@ -100,7 +100,7 @@
   }
 }
 
-.gallery__item5 {
+#souzanjiday .gallery__item5 {
   position: relative;
   grid-column: span 6;
   grid-row: span 2;
@@ -111,7 +111,7 @@
   }
 }
 
-.gallery__item1::before {
+#souzanjiday .gallery__item1::before {
   position: absolute;
   background-image: url(../images/icon-image03.webp);
   background-size: cover;
@@ -134,7 +134,7 @@
   }
 }
 
-.gallery__item2::before {
+#souzanjiday .gallery__item2::before {
   position: absolute;
   background-image: url(../images/icon-image01.webp);
   background-size: cover;
@@ -160,7 +160,7 @@
 }
 
 
-.gallery__item4::before {
+#souzanjiday .gallery__item4::before {
   position: absolute;
   background-image: url(../images/icon-image04.webp);
   background-size: cover;
@@ -183,7 +183,7 @@
   }
 }
 
-.gallery__item5::before {
+#souzanjiday .gallery__item5::before {
   position: absolute;
   background-image: url(../images/icon-image05.webp);
   background-size: cover;
@@ -205,7 +205,7 @@
   }
 }
 
-.gallery__item1 img {
+#souzanjiday .gallery__item1 img {
   width: 100%;
   aspect-ratio: 465 / 375;
   height: auto;
@@ -213,7 +213,7 @@
   border-radius: rem(22.5);
 }
 
-.gallery__item2 img {
+#souzanjiday .gallery__item2 img {
   width: 100%;
   aspect-ratio: 236 / 190;
   height: auto;
@@ -221,7 +221,7 @@
   border-radius: rem(22.5);
 }
 
-.gallery__item3 img {
+#souzanjiday .gallery__item3 img {
   width: 100%;
   aspect-ratio: 483 / 264;
   height: auto;
@@ -229,7 +229,7 @@
   border-radius: rem(22.5);
 }
 
-.gallery__item4 img {
+#souzanjiday .gallery__item4 img {
   width: 100%;
   aspect-ratio: 394 / 318;
   height: auto;
@@ -237,7 +237,7 @@
   border-radius: rem(22.5);
 }
 
-.gallery__item5 img {
+#souzanjiday .gallery__item5 img {
   width: 100%;
   aspect-ratio: 440 / 227;
   height: auto;

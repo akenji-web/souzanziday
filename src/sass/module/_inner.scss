@@ -1,7 +1,7 @@
 @use "global" as *;
 
 @if $startFrom == sp {
-  .inner {
+  #souzanjiday .inner {
     width: 100%;
     padding-right: $padding-sp;
     padding-left: $padding-sp;
@@ -14,7 +14,7 @@
     }
   }
 } @else {
-  .inner {
+  #souzanjiday .inner {
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
