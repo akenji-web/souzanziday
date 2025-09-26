@@ -84,7 +84,6 @@
     max-width: 100%;
     flex-direction: row;
     align-items: start;
-    justify-content: center;
     column-gap: rem(12);
   }
 }
@@ -111,6 +110,11 @@
 
   @include mq("md") {
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    column-gap: rem(12);
+    flex-wrap: wrap;
+    row-gap: rem(12);
   }
 }
 
@@ -126,7 +130,7 @@
   margin-top: rem(38);
 
   @include mq("md") {
-    margin-top: rem(12);
+    margin-top: 0;
   }
 }
 
@@ -318,7 +322,11 @@
 }
 
 #souzanjiday .timeline__item:not(:first-child) {
-  margin-top: rem(8);
+  margin-top: rem(21);
+
+  @include mq("md") {
+    margin-top: rem(10);
+  }
 }
 
 #souzanjiday .timeline__text {

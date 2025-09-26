@@ -23,6 +23,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // 中央の mv-main をブラー
   tl.to(".mv-main", {
     filter: "blur(10px)",
+    opacity: 0.3,
     duration: 1,
     ease: "none"
   }, 1);

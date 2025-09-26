@@ -7,7 +7,7 @@
   border-radius: rem(30);
 
   @include mq(md) {
-    padding: 28px 24px 14px 23px;
+    padding: 28px 24px 38px 23px;
   }
 }
 
@@ -51,7 +51,7 @@
   @include mq(md) {
     max-width: rem(95);
     aspect-ratio: 95 / 85;
-    bottom: rem(-74);
+    bottom: rem(-50);
     right: rem(-9);
   }
 }
