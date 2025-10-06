@@ -117,3 +117,19 @@ a {
   color: inherit;
   transition: opacity 0.3s;
 }
+
+/* CMS側の疑似要素の設定初期化 */
+#souzanjiday header::after,
+#souzanjiday footer::after,
+#souzanjiday main::after,
+#souzanjiday section::after,
+#souzanjiday div::after,
+#souzanjiday ul::after,
+#souzanjiday ol::after,
+#souzanjiday dl::after {
+  content: none;
+  clear: none;
+  display: inline;
+  height: auto;
+  visibility: visible;
+}

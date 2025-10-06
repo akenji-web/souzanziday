@@ -2,13 +2,19 @@
 
 #souzanjiday .attention {
   width: fit-content;
-  padding: rem(8) rem(24) rem(9) rem(26);
+  padding: rem(9) rem(30) rem(12) rem(32);
   border-radius: 20vw;
   background-color: $purple3;
   color: $white;
-  font-size: rem(14);
+  font-size: rem(17.6);
   font-family: $base-font-family;
   font-weight: $bold;
-  line-height: calc(16.8 / 14);
+  line-height: calc(21.14 / 17.6);
   letter-spacing: 0.20em;
+
+  @include mq(md) {
+    padding: 8px 22px 10px 27px;
+    font-size: rem(14);
+    line-height: calc(16.67 / 14);
+  }
 }

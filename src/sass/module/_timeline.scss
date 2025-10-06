@@ -237,7 +237,7 @@
 }
 
 #souzanjiday .timeline__title.timeline__title--02 img {
-  aspect-ratio: 434 / 61;
+  aspect-ratio: 434 / 94;
 }
 
 #souzanjiday .timeline__title.timeline__title--03 {
@@ -254,6 +254,10 @@
 
 #souzanjiday .timeline__title.timeline__title--04 {
   max-width: rem(261);
+
+  @include mq("md") {
+    max-width: rem(157);
+  }
 }
 
 #souzanjiday .timeline__title.timeline__title--04 img {
@@ -330,6 +334,7 @@
 }
 
 #souzanjiday .timeline__text {
+  margin-top: rem(48);
   display: grid;
   grid-template-columns: auto 1fr;
   color: $black;
@@ -340,6 +345,7 @@
   letter-spacing: 0.16em;
 
   @include mq("md") {
+    margin-top: rem(36);
     grid-template-columns: auto;
     row-gap: rem(6);
     font-size: rem(14);
@@ -364,20 +370,13 @@
   }
 }
 
-#souzanjiday .timeline__text {
-  margin-top: rem(48);
-
-  @include mq("md") {
-    margin-top: rem(45);
-  }
-}
-
 #souzanjiday .timeline__border-line {
   margin-top: rem(50);
   margin-bottom: rem(42);
 
   @include mq("md") {
-    margin-top: rem(24);
+    margin-bottom: rem(36);
+    padding-right: rem(5);
   }
 }
 
@@ -388,6 +387,10 @@
   height: auto;
   object-fit: cover;
   object-position: center;
+
+  @include mq("md") {
+    aspect-ratio: 260 / 2;
+  }
 }
 
 #souzanjiday .timeline__content:nth-of-type(4) .timeline__time {

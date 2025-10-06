@@ -6,7 +6,7 @@
   padding-top: rem(90);
 
   @include mq(md) {
-    padding-top: rem(48);
+    padding-top: rem(62);
   }
 }
 
@@ -68,7 +68,7 @@
   @include mq(md) {
     margin-top: rem(138);
     grid-template-columns: 1fr;
-    row-gap: rem(47);
+    row-gap: rem(45);
   }
 }
 

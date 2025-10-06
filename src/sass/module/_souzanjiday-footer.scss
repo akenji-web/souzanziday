@@ -1,6 +1,6 @@
 @use "global" as *;
 
-#souzanjiday .footer {
+#souzanjiday .souzanjiday-footer {
   background-color: $beige;
   padding-top: rem(77);
   padding-bottom: rem(72);
@@ -14,17 +14,17 @@
   }
 }
 
-#souzanjiday .footer__inner {
+#souzanjiday .souzanjiday-footer__inner {
 
 }
 
-#souzanjiday .footer__info {
+#souzanjiday .souzanjiday-footer__info {
   width: 100%;
   max-width: rem(280);
   margin-inline: auto;
 }
 
-#souzanjiday .footer__info img {
+#souzanjiday .souzanjiday-footer__info img {
   aspect-ratio: 280 / 69;
   height: auto;
   object-fit: contain;

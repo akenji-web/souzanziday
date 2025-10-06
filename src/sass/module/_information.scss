@@ -2,7 +2,7 @@
 
 #souzanjiday .information {
   background-color: $beige;
-  padding-top: rem(148);
+  padding-top: rem(142);
 
   @include mq(md) {
     padding-top: rem(88);
@@ -34,7 +34,7 @@
   }
 }
 
-#souzanjiday .information__date {
+#souzanjiday .information__subtitle {
   margin-top: rem(41);
   margin-inline: auto;
   width: fit-content;
@@ -44,37 +44,94 @@
   }
 }
 
-#souzanjiday .information__date-image {
+#souzanjiday .information__subtitle-image {
   width: 100%;
-  max-width: rem(333);
-  aspect-ratio: 333 / 100;
+  max-width: rem(618);
+  aspect-ratio: 618 / 202;
   height: auto;
   object-fit: contain;
-  object-position: center;
 
   @include mq(md) {
-    max-width: rem(274);
-    aspect-ratio: 274 / 81;
+    max-width: rem(310);
+    aspect-ratio: 310 / 243;
     object-fit: cover;
+    object-position: center;
   }
 }
 
 #souzanjiday .information__container {
-  margin-top: rem(51);
+  margin-top: rem(48);
 
   @include mq(md) {
-    margin-top: rem(61);
+    margin-top: rem(33);
+  }
+}
+
+#souzanjiday .information__text {
+  margin-top: rem(8);
+  color: $gray;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  line-height: calc(32 / 16);
+  letter-spacing: 0.099em;
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+#souzanjiday .information__text.information__text--large {
+  margin-top: 0;
+  font-size: rem(22);
+  font-weight: $bold;
+
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+#souzanjiday .information__timeline {
+  margin-top: rem(47);
+
+  @include mq(md) {
+    margin-top: rem(51);
+  }
+}
+
+#souzanjiday .information__notice {
+  width: fit-content;
+  margin-top: rem(80);
+  margin-inline: auto;
+
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+
+#souzanjiday .information__notice img {
+  width: 100%;
+  max-width: rem(591);
+  aspect-ratio: 591 / 23;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+
+  @include mq(md) {
+    max-width: rem(179);
+    aspect-ratio: 179 / 79;
   }
 }
 
 #souzanjiday .information__image {
-  margin-top: rem(110);
+  margin-top: rem(68);
   width: 100%;
   max-width: rem(429);
   margin-inline: auto;
 
   @include mq(md) {
-    margin-top: rem(92);
+    margin-top: rem(48);
     max-width: rem(250);
   }
 }

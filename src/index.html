@@ -73,8 +73,8 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
-<body id="souzanjiday">
-  <main>
+<body>
+  <main id="souzanjiday">
     <!-- メインビジュアル -->
     <div class="mv">
       <div class="inner mv__inner">
@@ -93,7 +93,7 @@
             </div>
             <div class="mv-detail__bottom">
               <div class="mv-detail__image04">
-                <img src="./assets/images/mv-image04.png" alt="ステージ登壇者：モデル・女優 静まなみさん 医師 有光威志先生 講演時間：14:00~15:00">
+                <img src="./assets/images/mv-image04.png" alt="特別トークセッション モデル 静まなみさん 医師 有光威志先生 講演時間：14:00~15:00">
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
               <img src="./assets/images/mv-image.webp" alt="世界早産児デーのイメージ画像">
             </div>
             <div class="mv-main__description">
-              <img src="./assets/images/mv-description_pc.webp" alt="すべての生まれたこどもと家族にやさしさとつながりが届く東京へ">
+              <img src="./assets/images/mv-description.webp" alt="すべてのこどもと家族にやさしさとつながりが届く東京へ">
             </div>
             <div class="mv-main__title">
               <img src="./assets/images/mv-title_pc.webp" alt="世界早産児デー 2025 in TOKYO">
@@ -110,7 +110,7 @@
           </div>
           <div class="mv__lead mv-lead">
             <div class="mv-lead__text">
-              <img src="./assets/images/lead-text.webp" alt="東京都は早産児とそのご家族が安心して暮らせるよう、社会全体で理解と支援を深めることを目的とした取り組みを行っております。">
+              <img src="./assets/images/lead-text.webp" alt="東京都はすべての子供とそのご家族が安心して暮らせるよう、社会全体で理解と支援を深めることを目的とした取り組みを行っております。">
             </div>
           </div>
         </div>
@@ -132,11 +132,12 @@
             世界中で、早産や早産児について知り、支え合うための活動が行われています。<br>
             東京都では、この日に合わせて「世界早産児デー2025 in TOKYO」を開催し、都民やご家族、支援者の皆さまと一緒に、早産や早産児への理解を深め、支援の輪を広げていきます。<br><br>
             本イベントでは、早産を経験されたモデルの静まなみさんと、新生児医療や家族支援に携わる有光威志先生（慶應義塾大学 医学部小児科学教室専任講師／日本NICU家族会機構 代表理事）をお迎えし、トークセッションや基調講演を行います。<br><br>
-            さらに、早産に関する基礎知識やNICUでの医療やサポート、支援制度をわかりやすく紹介するパネル展示や、参加型の体験コーナー、フォトスポットもご用意しています。<br><br>
+            さらに、早産に関する基礎知識やNICUでの医療やサポート、支援制度をわかりやすく紹介するパネル展示や、参加型の体験コーナー、フォトスポットもご用意しています。<br>
+            展示コーナーは事前予約不要ですので、お気軽にお立ち寄りください。
           </p>
         </div>
         <div class="about__button">
-          <a href="#" class="button">応募フォームはこちら</a>
+          <a href="#" class="button">ステージ観覧予約はこちら</a>
         </div>
       </div>
     </section>
@@ -150,10 +151,15 @@
             <img src="./assets/images/information-title_sp.webp" class="information__title-image" alt="information" loading="lazy" decoding="async">
           </picture>
         </h2>
-        <div class="information__date">
-          <img src="./assets/images/information-date.webp" class="information__date-image" alt="2025.11.16 STAGE TIMELINE" loading="lazy" decoding="async">
+        <div class="information__subtitle">
+          <picture>
+            <source srcset="./assets/images/information-subtitle_pc.webp" media="(min-width: 768px)">
+            <img src="./assets/images/information-subtitle_sp.webp" class="information__subtitle-image" alt="2025.11.16 早産と向き合う、未来への一歩~静 まなみさんと医師が語る、家族と社会の支え~" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="information__container">
+          <div class="information__text information__text--large">ステージ観覧は事前予約制です。</div>
+          <div class="information__text">定員100名となります。<br class="u-mobile">定員以上のご応募があった際は<br class="u-mobile">抽選とさせていただきます。</div>
           <div class="information__timeline timeline">
             <div class="timeline__start">OPEN</div>
             <!-- 14:00~ -->
@@ -193,7 +199,7 @@
                       <img src="./assets/images/speaker01.webp" class="timeline__image-image" alt="静まなみさんの顔写真" loading="lazy" decoding="async">
                     </figure>
                     <div class="timeline__name-wrapper">
-                      <p class="timeline__position">モデル(女優トリ)</p>
+                      <p class="timeline__position">モデル</p>
                       <p class="timeline__name">静 まなみ <span>さん</span></p>
                     </div>
                   </div>
@@ -210,7 +216,7 @@
               </div>
               <div class="timeline__body">
                 <h3 class="timeline__title timeline__title--02">
-                  <img src="./assets/images/timeline-title02.webp" alt="いのちを支え、育てる~NICUと家庭、その後の現場のリアル~" loading="lazy" decoding="async">
+                  <img src="./assets/images/timeline-title02.webp" alt="トークセッション いのちを支え、育てる~NICUと家庭、その後の現場のリアル~" loading="lazy" decoding="async">
                 </h3>
                 <p class="timeline__description">
                   ・出産前後の体験や当時の気持ち<br>
@@ -218,22 +224,17 @@
                   ・社会的な支援制度や医療の大切さ<br>
                   などについて、語り合います。
                 </p>
-                <ul class="timeline__list">
-                  <li class="timeline__item">出産前後の体験や当時の気持ち</li>
-                  <li class="timeline__item">NICUでの支え、家族との歩み</li>
-                  <li class="timeline__item">社会的な支援制度や医療の大切さ</li>
-                </ul>
-                <div class="timeline__text"><span>登壇者</span>静 まなみさん（モデル(女優トリ)）<br>有光 威志先生（医師）</div>
-                <div class="timeline__border-line u-desktop">
+                <div class="timeline__text"><span>登壇者</span>静 まなみさん（モデル）<br>有光 威志先生（医師）</div>
+                <div class="timeline__border-line">
                   <img src="./assets/images/border-line.webp" alt="" loading="lazy" decoding="async">
                 </div>
-                <h3 class="timeline__title timeline__title--04 u-desktop">
-                  <img src="./assets/images/timeline-title04.webp" alt="いのちを支え、育てる~NICUと家庭、その後の現場のリアル~" loading="lazy" decoding="async">
+                <h3 class="timeline__title timeline__title--04">
+                  <img src="./assets/images/timeline-title04.webp" alt="Q&Aセッション" loading="lazy" d&ecoding="async">
                 </h3>
-                <p class="timeline__description u-desktop">
+                <p class="timeline__description">
                   「妊娠・出産・子育て」など皆さまからの質問に、登壇者がお答えします。
                 </p>
-                <div class="timeline__text u-desktop"><span>登壇者</span>静 まなみさん（モデル・女優）<br>有光 威志先生（医師）</div>
+                <div class="timeline__text"><span>登壇者</span>静 まなみさん（モデル）<br>有光 威志先生（医師）</div>
               </div>
             </div>
 
@@ -244,7 +245,6 @@
                 <div class="timeline__speaker-info">
                   <div class="timeline__speaker">
                     <div class="timeline__name-wrapper">
-                      <p class="timeline__position">東京都立病院機構</p>
                       <p class="timeline__name">岡崎<span>先生</span></p>
                     </div>
                   </div>
@@ -257,12 +257,18 @@
                 <p class="timeline__description">
                   NICU入院児支援手帳「のびのび」についてのご紹介します。
                 </p>
-                <div class="timeline__text"><span>登壇者</span>岡崎先生（東京都立病院機構）</div>
+                <div class="timeline__text"><span>登壇者</span>岡崎先生（東京都立小児総合医療センター）</div>
               </div>
             </div>
   
             <div class="timeline__end">CLOSE</div>
           </div>
+        </div>
+        <div class="information__notice">
+          <picture>
+            <source srcset="./assets/images/information-notice_pc.webp" media="(min-width: 768px)">
+            <img src="./assets/images/information-notice_sp.webp" alt="12月中旬以降にアーカイブ動画を公開予定です" loading="lazy" decoding="async">
+          </picture>
         </div>
         <div class="information__image">
           <img src="./assets/images/information-icon.webp" alt="世界早産児デーのイメージ画像" loading="lazy" decoding="async">
@@ -276,7 +282,7 @@
         <h2 class="learning__title">
           <picture>
             <source srcset="./assets/images/learning-title_pc.webp" media="(min-width: 768px)">
-            <img src="./assets/images/learning-title_sp.webp" class="learning__title-image" alt="各展示コーナー・フォトスポットなどの体験コンテンツも充実しています" loading="lazy" decoding="async">
+            <img src="./assets/images/learning-title_sp.webp" class="learning__title-image" alt="パネル展示や体験コーナーなど、学べるコンテンツが充実しています。" loading="lazy" decoding="async">
           </picture>
         </h2>
         <div class="learning__container">
@@ -330,12 +336,12 @@
               世界早産児デー2025 inTOKYO イベント参加者のみお申し込みが可能です。
             </div>
             <div class="daycare__button">
-              <a href="#" class="button button--small">託児所のご予約はこちら</a>
+              <a href="#" class="button button--small">託児所の予約はこちら</a>
             </div>
           </div>
         </div>
         <div class="learning__button">
-          <a href="#" class="button">応募フォームはこちら</a>
+          <a href="#" class="button">ステージ観覧予約はこちら</a>
         </div>
       </div>
     </section>
@@ -349,16 +355,17 @@
         </p>
       </div>
     </div>
-  </main>
 
     <!-- フッター -->
-  <footer class="footer">
-    <div class="inner footer__inner">
-      <div class="footer__info">
-        <img src="./assets/images/footer-info.webp" alt="11月17日は世界早産児デー 東京都" loading="lazy" decoding="async">
+    <div class="souzanjiday-footer">
+      <div class="inner souzanjiday-footer__inner">
+        <div class="souzanjiday-footer__info">
+          <img src="./assets/images/footer-info.webp" alt="11月17日は世界早産児デー 東京都" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
-  </footer>
+  </main>
+  <footer></footer>
 </body>
 
 </html>

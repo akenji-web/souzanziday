@@ -8,7 +8,7 @@
   border-radius: rem(30);
 
   @include mq(md) {
-    padding: rem(24) rem(24) rem(38) rem(30);
+    padding: rem(26) rem(24) rem(38) rem(30);
   }
 }
 
@@ -56,7 +56,7 @@
 }
 
 #souzanjiday .experience__list {
-  margin-top: rem(35);
+  margin-top: rem(27);
   padding-left: rem(28);
 
   @include mq(md) {
